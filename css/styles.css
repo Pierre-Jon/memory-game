@@ -45,7 +45,7 @@ body {
 
 h1 {
     color: rgb(255, 255, 255);  
-    text-align:ri;
+    text-align:left;
     font-family: 'Cal', sans-serif;
     font-size: 3em;
     font-weight: 900;
@@ -172,9 +172,30 @@ h3 {
 }
 
 
+/* CONTENT INSCRIRE */
+.titre-inscrire {
+        font-style: italic;
+        font-weight: 800;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: #6021f3;
+        padding: 15px 0;
+        text-align: center;
+        padding: 50px 0;
+}
+
+form {
+    text-align: center;
+}
+
+.form-group {
+    padding-bottom: 20px;
+}
+
+
 /* CONTENT JOUER */
 
-.gride {
+.grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -187,7 +208,7 @@ h3 {
 .cards {
     width: 130px;
     height: 130px;
-    /* perspective: 1000px;  */  /* profondeur pour l'effet 3D */
+    perspective: 1000px;   /* profondeur pour l'effet 3D */
 }
 
 .deux-faces {
@@ -198,7 +219,7 @@ h3 {
     transition: transform 0.6s;
 }
 
-.retourner {
+.flip {
     transform: rotateY(180deg); /* effet de retournement */
 }
 
@@ -229,3 +250,6 @@ h3 {
 }
 
 
+.match {
+    background-color: #FFFFFF;
+}
